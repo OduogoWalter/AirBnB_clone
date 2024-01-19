@@ -40,3 +40,39 @@ $ ./console.py
 (hbnb) update User 1234-5678 first_name "John"
 (hbnb) all User
 (hbnb) quit
+
+import sys
+
+class Console:
+    """
+    Console class for the AirBnB clone command-line interface.
+    """
+    prompt = "(hbnb) "
+
+    def do_help(self, arg):
+        """
+        Display help messages for available commands.
+        """
+        commands = ["EOF", "help", "quit"]
+        print("\nDocumented commands (type help <topic>):")
+        print("=" * 40)
+        for cmd in commands:
+            print(cmd.ljust(10), end=" ")
+        print("\n")
+
+    def do_EOF(self, arg):
+        """
+        Handle the EOF command.
+        """
+        print()
+        sys.exit()
+
+    def do_quit(self, arg):
+        """
+        Exit the console.
+        """
+        sys.exit()
+
+if __name__ == "__main__":
+    my_console = Console()
+    my_console.cmdloop()
