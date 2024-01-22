@@ -8,6 +8,7 @@ from models.amenity import Amenity
 from models.place import Place
 from models.review import Review
 
+
 class HBNBCommand(cmd.Cmd):
     prompt = '(hbnb) '
 
@@ -18,7 +19,8 @@ class HBNBCommand(cmd.Cmd):
             print("** class name missing **")
             return
         class_name = args[0]
-        if class_name not in ["BaseModel", "State", "City", "Amenity", "Place", "Review"]:
+        if class_name not in ["BaseModel", "State",
+                              "City", "Amenity", "Place", "Review"]:
             print("** class doesn't exist **")
             return
         new_instance = eval(class_name)()
@@ -31,7 +33,8 @@ class HBNBCommand(cmd.Cmd):
         if not args:
             print("** class name missing **")
             return
-        if args[0] not in ["BaseModel", "State", "City", "Amenity", "Place", "Review"]:
+        if args[0] not in ["BaseModel", "State",
+                           "City", "Amenity", "Place", "Review"]:
             print("** class doesn't exist **")
             return
         if len(args) < 2:
@@ -58,6 +61,7 @@ class HBNBCommand(cmd.Cmd):
         """EOF command to exit the program"""
         print("")
         return True
+
 
 if __name__ == '__main__':
     HBNBCommand().cmdloop()
