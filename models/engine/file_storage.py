@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 
 import json
+from models.base_model import BaseModel
 from models.state import State
 from models.city import City
 from models.amenity import Amenity
@@ -31,7 +32,11 @@ class FileStorage:
                 obj_dict = json.load(file)
                 for key, value in obj_dict.items():
                     class_name, obj_id = key.split('.')
-                    obj = eval(class_name)(**value)
+                    class_dict = {"BaseModel": BaseModel,
+                                  "State": State, "City": City,
+                                  "Amenity": Amenity,
+                                  "Place": Place, "Review": Review}
+                    obj = class_dict(class_name)(**value)
                     FileStorage.__objects[key] = obj
         except FileNotFoundError:
             pass
