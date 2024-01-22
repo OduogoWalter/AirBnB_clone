@@ -4,11 +4,13 @@ Module containing the BaseModel class.
 """
 import uuid
 from datetime import datetime
+from models import storage
 
 class BaseModel:
     """
     The BaseModel class for common attributes/methods.
     """
+
     def __init__(self, *args, **kwargs):
         """
         Initializes a new instance of BaseModel.
@@ -33,6 +35,7 @@ class BaseModel:
             setattr(self, 'id', str(uuid.uuid4()))
             setattr(self, 'created_at', datetime.now())
             setattr(self, 'updated_at', datetime.now())
+            storage.new(self)
 
     def __str__(self):
         """
@@ -50,6 +53,7 @@ class BaseModel:
         updated_at with the current datetime.
         """
         setattr(self, 'updated_at', datetime.now())
+        storage.save()
 
     def to_dict(self):
         """
