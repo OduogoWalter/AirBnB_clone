@@ -40,3 +40,17 @@ $ ./console.py
 (hbnb) update User 1234-5678 first_name "John"
 (hbnb) all User
 (hbnb) quit
+
+Resources:
+1. https://docs.python.org/3.8/library/cmd.html
+2. https://pymotw.com/2/cmd/
+3. https://docs.python.org/3.8/library/uuid.html
+4. https://docs.python.org/3.8/library/datetime.html
+5. https://docs.python.org/3.8/library/unittest.html#module-unittest
+6. https://yasoob.me/2013/08/04/args-and-kwargs-in-python-explained/
+7. https://www.pythonsheets.com/notes/python-tests.html
+8. https://wiki.python.org/moin/CmdModule
+9. https://realpython.com/python-testing/
+
+i. https://intranet.alxswe.com/concepts/66
+ii. https://intranet.alxswe.com/concepts/74
