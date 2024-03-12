@@ -54,3 +54,13 @@ Resources:
 
 i. https://intranet.alxswe.com/concepts/66
 ii. https://intranet.alxswe.com/concepts/74
+
+HTML / CSS LEARNING MATERIALS
+1.	https://learn.shayhowe.com/html-css/
+2.	https://www.codecademy.com/article/html-inline-styles
+3.	https://css-tricks.com/specifics-on-css-specificity/
+4.	https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML
+5.	https://developer.mozilla.org/en-US/docs/Learn/CSS
+6.	https://developer.mozilla.org/en-US/
+7.	https://css-tricks.com/centering-css-complete-guide/
+
