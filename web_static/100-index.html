@@ -7,6 +7,16 @@
     <link rel="stylesheet" type="text/css" href="styles/3-footer.css">
     <link rel="stylesheet" type="text/css" href="styles/6-filters.css">
     <link rel="stylesheet" type="text/css" href="styles/100-places.css">
+    <style>
+        .information div {
+            display: flex;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+        .information div img {
+            margin-left: 10px;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -23,18 +33,27 @@
                 <h2>Place Name</h2>
                 <div class="price_by_night">$100</div>
                 <div class="information">
-                    <div class="max_guest">Guests: 4</div>
-                    <div class="number_rooms">Bedrooms: 2</div>
-                    <div class="number_bathrooms">Bathrooms: 2</div>
+                    <div class="max_guest">
+                        Guests: 
+                        <img src="images/icon_group.png" alt="Guests">
+                    </div>
+                    <div class="number_rooms">
+                        Bedrooms: 
+                        <img src="images/icon_bed.png" alt="Bedrooms">
+                    </div>
+                    <div class="number_bathrooms">
+                        Bathrooms: 
+                        <img src="images/icon_bath.png" alt="Bathrooms">
+                    </div>
+                    <div class="user"><strong>Owner:</strong> John Walter</div>
+                    <div class="description">This is a well-maintained house with all the amenities available.</div>
                 </div>
-                <div class="user"><strong>Owner:</strong> Fake Owner</div>
-                <div class="description">Fake Description</div>
                 <div class="amenities">
                     <h2>Amenities</h2>
                     <ul>
-                        <li>Pet friendly</li>
-                        <li>TV</li>
-                        <li>Wifi</li>
+                        <li><img src="images/icon_pets.png" alt="Pet Friendly"></li>
+                        <li><img src="images/icon_wifi.png" alt="Wifi"></li>
+                        <li><img src="images/icon_tv.png" alt="TV"></li>
                         <!-- Add more amenities as needed -->
                     </ul>
                 </div>
