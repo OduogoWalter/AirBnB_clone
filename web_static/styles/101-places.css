@@ -1,0 +1,12 @@
+.places {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.place {
+    width: 48%;
+    margin-bottom: 20px;
+}
+
+/* Add more styles as needed */
